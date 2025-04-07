@@ -17,14 +17,17 @@ public class CreaPizzeRunner implements CommandLineRunner {
         Pizza pizza1 = new Pizza();
         pizza1.setNome("Margherita");
         pizza1.setPrezzo(6.99);
+        pizza1.setCalorie(400);
 
         Pizza pizza2 = new Pizza();
         pizza2.setNome("Napoletana");
         pizza2.setPrezzo(7.99);
+        pizza2.setCalorie(500);
 
         Pizza pizza3 = new Pizza();
         pizza3.setNome("Diavola");
         pizza3.setPrezzo(8.99);
+        pizza3.setCalorie(600);
 
         pizzeRepository.saveAll(List.of(pizza1, pizza2, pizza3));
 

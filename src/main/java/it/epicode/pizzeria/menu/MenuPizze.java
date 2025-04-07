@@ -7,6 +7,7 @@ import it.epicode.pizzeria.toppings.Topping;
 import jakarta.persistence.*;
 import lombok.Data;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -17,11 +18,11 @@ public class MenuPizze {
     private Long id;
 
     @OneToMany
-    private List<Pizza> pizze;
+    private List<Pizza> pizze = new ArrayList<>();
 
     @OneToMany
-    private List<Topping> toppings;
-    
+    private List<Topping> toppings = new ArrayList<>();
+
     @OneToMany
-    private List<Bevanda> bevande;
+    private List<Bevanda> bevande = new ArrayList<>();
 }

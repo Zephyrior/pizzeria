@@ -17,6 +17,8 @@ public class Pizza {
     @Column(name = "nome", nullable = false, length = 100)
     private String nome;
 
+    private int calorie;
+
     @OneToMany
     private List<Topping> toppings;
     private double prezzo;

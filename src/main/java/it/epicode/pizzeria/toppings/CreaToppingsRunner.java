@@ -25,7 +25,11 @@ public class CreaToppingsRunner implements CommandLineRunner {
         topping4.setNome("Prosciutto");
         Topping topping5 = new Topping();
         topping5.setNome("Pancetta");
+        Topping topping6 = new Topping();
+        topping6.setNome("Funghi");
+        Topping topping7 = new Topping();
+        topping7.setNome("Salsiccia");
 
-        toppingRepository.saveAll(List.of(topping1, topping2, topping3, topping4, topping5));
+        toppingRepository.saveAll(List.of(topping1, topping2, topping3, topping4, topping5, topping6, topping7));
     }
 }
